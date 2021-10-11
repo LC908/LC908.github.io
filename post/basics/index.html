@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>Hello Gridea | LC908</title>
+<title>Basics | LC908</title>
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
@@ -18,14 +18,17 @@
 
 
 
-    <meta name="description" content="👏  欢迎使用 Gridea ！
-✍️  Gridea 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...
-
-Github
-Gridea 主页
-示例网站
-特性👇
-📝  你可以使用最酷的 Markdo..." />
+    <meta name="description" content="1.1、二极管
+1）单向导电性
+2）二极管伏安特性
+开启电压，大多数二极管为0.7V
+反向电流
+反向击穿电压
+3）等效电路
+4）微变等效电路
+输出正弦波的幅值决定于与的分压
+5）稳压二级管
+稳压管在反向击穿时，在一定的电流范围内，端电压几乎..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -97,31 +100,43 @@ Gridea 主页
       <div class="main-container">
         <div class="content-container" data-aos="fade-up">
           <div class="post-detail">
-            <h2 class="post-title">Hello Gridea</h2>
-            <div class="post-date">2018-12-12</div>
+            <h2 class="post-title">Basics</h2>
+            <div class="post-date">2021-10-11</div>
             
             <div class="post-content" v-pre>
-              <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="https://gridea.dev/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+              <h1 id="11-二极管">1.1、二极管</h1>
+<p>1）单向导电性<br>
+2）二极管伏安特性</p>
+<p>开启电压，大多数二极管为0.7V<br>
+反向电流<br>
+反向击穿电压</p>
+<p>3）等效电路</p>
+<p>4）微变等效电路</p>
+<p>输出正弦波的幅值决定于与的分压</p>
+<p>5）稳压二级管<br>
+稳压管在反向击穿时，在一定的电流范围内，端电压几乎不变，表现出稳压特性。</p>
+<h1 id="12-晶体管">1.2、晶体管</h1>
+<p>1）晶体管分类：<br>
+双极型晶体管 BJT (Bipolar Junction Transistor)，电流控制型；<br>
+场效应晶体管 FET (Field Effect Transistor)，电压控制型，分为结型场效应管JFET和金属氧化物半导体场效应管MOSFET；</p>
+<p>2）晶体管工作原理</p>
+<p>3）晶体管伏安特性<br>
+输入伏安曲线</p>
+<p>输出伏安曲线</p>
+<p>4）放大电路</p>
+<p>5）晶体管的四种状态<br>
+截止、放大、饱和、倒置</p>
+<p>6）共基极、共集电极放大电路</p>
+<p>7）饱和失真&amp;截止失真</p>
+<p>8）失真电压裕度</p>
+<p>9）静态负载线&amp;动态负载线</p>
+<p>10）共射极4电阻电路</p>
+<p>优点：电路的静态工作点，与晶体管关系很小</p>
+<h1 id="13-场效应管">1.3、场效应管</h1>
+<p>场效应管（Field Effect Transistor）是单极型晶体管，只有一种载流子运动，流向一个极，因此叫单极型晶体管。<br>
+Junction FET，工作电流小，适合于信号放大。<br>
+Metal-Oxide-Semiconductor FET，分为增强型和耗尽型。<br>
+分为门极G（Gate），漏极D（Drain），源极S（Source），门极无电流，漏极电流一定等于源极电流。核心原理，GS两端的电压，控制漏极电流，为压控型器件。</p>
 
             </div>
             
