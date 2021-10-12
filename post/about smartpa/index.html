@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="shortcut icon" href="https://lc908.github.io//favicon.ico?v=1634055137930">
+<link rel="shortcut icon" href="https://lc908.github.io//favicon.ico?v=1634056419577">
 <link rel="stylesheet" href="https://lc908.github.io//styles/main.css">
 
 
@@ -18,14 +18,17 @@
 
 
 
-    <meta name="description" content="摘要
+    <meta name="description" content="[TOC]
+1、功率放大电路
 
-2.1、功率放大电路
+基本概念
 功率放大电路：能够驱动较重负载，向外提供较大输出功率的放大电路。
 关键指标：a）最大输出功率；b）转换效率；c）失真
 不同类型的功率放大电路
-1）Class A
-A类功放：在输入信号的一个周期内，晶体管一直处于..." />
+
+
+Class A
+A类功放：在输入信号的一个周期内，晶..." />
     <meta name="keywords" content="" />
   </head>
   <body>
@@ -35,7 +38,7 @@ A类功放：在输入信号的一个周期内，晶体管一直处于..." />
   <div class="top-container" data-aos="fade-right">
     <div class="top-header-container">
       <a class="site-title-container" href="https://lc908.github.io/">
-        <img src="https://lc908.github.io//images/avatar.png?v=1634055137930" class="site-logo">
+        <img src="https://lc908.github.io//images/avatar.png?v=1634056419577" class="site-logo">
         <h1 class="site-title">LC908</h1>
       </a>
       <div class="menu-btn" @click="menuVisible = !menuVisible">
@@ -101,41 +104,58 @@ A类功放：在输入信号的一个周期内，晶体管一直处于..." />
             <div class="post-date">2021-10-11</div>
             
             <div class="post-content" v-pre>
-              <p>摘要</p>
-<!-- more -->
-<h1 id="21-功率放大电路">2.1、功率放大电路</h1>
+              <p>[TOC]</p>
+<h1 id="1-功率放大电路">1、功率放大电路</h1>
+<hr>
+<h2 id="基本概念">基本概念</h2>
 <p>功率放大电路：能够驱动较重负载，向外提供较大输出功率的放大电路。<br>
 关键指标：a）最大输出功率；b）转换效率；c）失真</p>
-<p>不同类型的功率放大电路<br>
-1）Class A<br>
-A类功放：在输入信号的一个周期内，晶体管一直处于放大区，其导通角为360°，即便输入信号为0，晶体管也在燃烧电力，A类功放是晶体管功率放大电路中最保真的，功耗也最大。</p>
+<h2 id="不同类型的功率放大电路">不同类型的功率放大电路</h2>
+<ul>
+<li>
+<p>Class A</p>
+<p>A类功放：在输入信号的一个周期内，晶体管一直处于放大区，其导通角为360°，即便输入信号为0，晶体管也在燃烧电力，A类功放是晶体管功率放大电路中最保真的，功耗也最大。</p>
+</li>
+</ul>
 <p>特点：<br>
 a）静态功耗高，发热严重：无论有无输入信号，晶体管都处于放大区，Rc持续流过静态电流；<br>
 b）输入伏安特性存在严重的非线性（大信号失真），导致输出也存在严重的谐波失真；<br>
 很多大功率高品质功率放大电路，仍采用分立晶体管实现，甚至使用电子管实现，分别称之为石机和胆机。此类放大电路多采用的是A类功放。</p>
 <p>参考文献——第一个成型的晶体管A类放大器：<br>
 《Simple Class A Amplifier: A 10-W design  giving subjectively better results than Class B transistor amplifiers》</p>
-<p>2）Class B &amp; Class AB<br>
-B类互补功放，用两个互补的晶体管实现推挽输出，在静态时几乎不消耗功率，理论最高效率78.5%</p>
+<ul>
+<li>2）Class B &amp; Class AB<br>
+B类互补功放，用两个互补的晶体管实现推挽输出，在静态时几乎不消耗功率，理论最高效率78.5%</li>
+</ul>
 <p>正半周过渡到负半周时产生交越失真。</p>
-<p>3）AB类功放<br>
-在B类功放基础上，为了减小交越失真，电路中增加了两个电阻和二极管，形成一种新的电路结构。</p>
+<ul>
+<li>AB类功放<br>
+在B类功放基础上，为了减小交越失真，电路中增加了两个电阻和二极管，形成一种新的电路结构。</li>
+</ul>
 <p>输入信号为0时，晶体管不再处于截止状态，而处于可控的微导通状态。二极管的导通压降和三极管发射结导通压降近似相等，电路输出近似为输入，但实际上，两个压降并不严格相同，交越失真仍是存在的，只是远比B类功放电路小很多。</p>
-<p>4）Class D<br>
+<ul>
+<li>Class D<br>
 前述的所有放大器，当输入信号为正弦波时，其功率晶体管全部或者部分处于放大区，势必有自身的功率耗散，导致其效率无法再提高。<br>
 D类功放：把输入信号调制成PWM波，Pulse Width Modulation，此时晶体管或完全导通（饱和），或完全关断（截止），几乎不消耗功率。最后利用LC二阶低通滤波器，将方波解调为输入信号幅度相关的波形。<br>
-生成PWM波：将输入信号加载到高速比较器的正端，将高频三角波加载到比较器的负端，即可以输出PWM波。</p>
+生成PWM波：将输入信号加载到高速比较器的正端，将高频三角波加载到比较器的负端，即可以输出PWM波。</li>
+</ul>
 <p>无输出滤波型功率放大<br>
 早期桥接负载形式直接将PWM波反向处理后分别接到功率驱动晶体管，负载桥接再两个输出端之间。差分输出波形显示出两个问题：一是信号翻转的落差很大，等于2VDD；二是脉冲宽度较大。这样的信号在载波及其谐波频率处带有较多能量，如果直接加在扬声器两端，不仅会降低效率，产生较大的EMI，而且较大的输出纹波会对扬声器造成损害。所以必须在输出级后加上滤波器，以储存输出的过多能量。<br>
 针对上述传统PWM调制的弊端，新一代的PWM调制方式，在输入级将输入信号转换成相位相反的差分信号，分别通过调制器对其进行调制，再经过桥式输出，驱动扬声器。可以看到，新的PWM调制的输出波形相比较传统的输出波形，它的差分输出信号翻转落差只有一个VDD，而且脉宽比较小。这样的信号在载波及其谐波频率处携带的能量较少，利用扬声器自身的低通特性，便能够达到比较理想的滤波效果，从而实现了免滤波器输出的可能。所以，目前市场上都是新一代的PWM调制的免滤波D类功放结构。</p>
 <p>Class D原理：</p>
-<p>5）Class G<br>
+<ul>
+<li>
+<p>Class G<br>
 Class-D amplifiers convert an input signal into a series of output pulses that switch between GND and supply voltages. This PWM output is the result of modulating the input signal with the duty cycle of the output pulses. The output stage of this type of amplifier can be implemented easily using a half H-bridge<br>
 architecture for each output terminal.<br>
 Internal power losses are minimized by never simultaneously turning on both high-side and low-side transistors which provides a significant boost to overall system efficiency compared to Class–A, Class-B, and Class-AB amplifiers. Often, this output switching may occur anywhere from hundreds of kHz to a few MHz. Driving this modulated signal through a low pass filter will remove the higher frequency content related to the output switching and will pass only the desired signal content to the load. Class-D amplifiers are ideal in audio applications given the relatively low frequency passband needed. This makes it easy to separate the audio signal from the output switching with very low distortion. Many modern audio Class-D amplifiers can utilize the inductance of the speaker coil itself to resolve the output waveform and allow the amp to operate without any external filtering between the output and the load. However, emissions standards often require that some EMI filtering be used to limit radiated noise.<br>
 In a Class G system, the supply voltage for the Class D output is only boosted when needed. If the output exceeds a certain threshold then the boost will be enabled on and provide additional head room.</p>
-<p>6）Class H<br>
+</li>
+<li>
+<p>Class H<br>
 Instead of having a single voltage, the boost level is variable. This enables the output to operate with just enable headroom to maintain low distortion while achieving the maximum output efficiency.</p>
+</li>
+</ul>
 <p>The major design trade-off when selecting which mode to operate depends on the available input current. Class-H mode will require greater current drive to be available from the battery in order to achieve the fast switching necessary. Class-G mode tends to be less demanding, but will not yield the same efficiency<br>
 gains as Class-H.</p>
 <p>Efficiency Comparison</p>
@@ -144,7 +164,8 @@ a）变压器型<br>
 b）OTL型：输出无变压器型（Output TransformerLess），用一个电容将直流电压输出隔离，仅输出交变信号，电容需很大才能保证功放的低频性能。<br>
 c）OCL型：输出无电容型（Output CapacitorLess），能够改善低频性能，需使用双电源供电。<br>
 d）BTL型：桥接负载（Bridge Tied Load）或平衡式无变压器（Balanced TransformerLess），也就是差分输出。输出功率是OCL电路的4倍。</p>
-<p>2.2、DC-DC Boost电路</p>
+<h1 id="2-dc-dc-boost电路">2、DC-DC Boost电路</h1>
+<hr>
 <p>There are five main types of converters in the non-isolating group, usually called the buck, boost, buck-boost, Cuk and charge-pump converters.<br>
 The buck converter is used for voltage step-down/reduction, while the boost converter is used for voltage step-up. The buck-boost and Cuk converters (The Cuk converter is named after its originator, Slobodan Cuk of Cal Tech university in California.) can be used for either step-down or step-up, but are essentially voltage polarity reversers or inverters as well.  The charge-pump converter is used for either voltage step-up or voltage inversion, but only in relatively low power applications.</p>
 <p>1）Buck Converter</p>
@@ -167,7 +188,8 @@ The basic circuit for a voltage doubling charge-pump converter is shown in Fig.5
 Operation is fairly simple. First Q1 and Q4 are turned on, connecting C1 across the input source and allowing it to charge to Vin. Then these switches are turned off, and Q2 and Q3 are turned on instead. C1 is now connected in series with the input voltage source, across output reservoir capacitor C2. As a result some of the charge in C1 is transferred to C2, which charges to twice the input voltage. This cycle is repeated at a fairly high frequency, with C2 providing the load current during the part of the cycle when Q2 and Q3 are turned off.<br>
 As you can see all of the energy supplied to the load in this type of converter flows through C1, and as ripple current. So again this capacitor needs to have a relatively high value, have low ESR (to minimise losses) and be able to cope with a heavy ripple current.<br>
 On the whole, though, the fact that charge-pump converters rely for their operation on charge stored in a capacitor tends to limit them to relatively low current applications. However for this type of operation they are often cheaper and more compact than inductor-type converters.</p>
-<p>2.3、SmartPA芯片内部框图</p>
+<h1 id="3-smartpa芯片内部框图">3、SmartPA芯片内部框图</h1>
+<hr>
 <p>内部框图</p>
 <p>1）电源模块<br>
 VBAT：Boost模块供电<br>
@@ -188,8 +210,10 @@ Boost模块通过DSP输出检测到音频信号幅值大小，DSP到Class D模�
 <p>6）供应商芯片参考：<br>
 NXP TFA9874芯片内部框图&amp;参考电路</p>
 <p>Ti Tas2562芯片内部框图</p>
-<p>2.4、关键性能规格</p>
-<p>2.5、单元测试用例</p>
+<h1 id="4-关键性能规格">4、关键性能规格</h1>
+<hr>
+<h1 id="5-单元测试用例">5、单元测试用例</h1>
+<hr>
 
             </div>
             
@@ -198,7 +222,7 @@ NXP TFA9874芯片内部框图&amp;参考电路</p>
                 <div class="next">下一篇</div>
                 <a href="https://lc908.github.io/post/basics/">
                   <h3 class="post-title">
-                    Basics
+                    To begin with...
                   </h3>
                 </a>
               </div>
