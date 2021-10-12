@@ -1,65 +1,107 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://lc908.github.io/</id>
-    <title>LC908</title>
-    <updated>2021-10-12T16:12:30.141Z</updated>
-    <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://lc908.github.io/"/>
-    <link rel="self" href="https://lc908.github.io/atom.xml"/>
-    <subtitle>温故而知新</subtitle>
-    <logo>https://lc908.github.io/images/avatar.png</logo>
-    <icon>https://lc908.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, LC908</rights>
-    <entry>
-        <title type="html"><![CDATA[关于扬声器]]></title>
-        <id>https://lc908.github.io/post/about loudspeakers/</id>
-        <link href="https://lc908.github.io/post/about loudspeakers/">
-        </link>
-        <updated>2021-10-11T14:37:55.000Z</updated>
-        <content type="html"><![CDATA[<p>1.1、基本模型</p>
-<p>电学-力学转换</p>
-<p>1）阻抗曲线</p>
-<p>其中，共振频率：</p>
-<p>机械品质因数：共振频率下，一个周期中存储和损耗的能量之比</p>
-<p>从阻抗曲线可以获得：1）直流阻抗；2）共振频率；3）最大阻抗值；4）机械品质因数</p>
-<p>2）位移曲线</p>
-<p>电学品质因数：共振频率下，一个周期中存储和损耗的能量之比</p>
-<p>1.2、电-力-声转换<br>
-电力声类比<br>
-电学：电流线、电位相对量、阻抗型<br>
-力学：力线、速度相对量、导纳型<br>
-声学：容积速度流线、声压相对量、阻抗型</p>
-<p>电学折合到力学端</p>
-<p>其中</p>
-<p>声学折合到力学端</p>
-<p>其中</p>
-<p>全部折合到电学端</p>
-<p>其中Les、Cesr、Resr</p>
-<p>变量器</p>
-<p>1.3、Klippel测量</p>
-<p>1）小信号参数拟合LPM<br>
-a、测试电阻抗曲线（电流与电压传递函数），要求测量信号强度不高但同时能满足足够的信噪比；电阻抗拟合出电学参数（Re、Le、Cesr、Les、Resr）；<br>
-b、激光测量法，测试电压与位移的传递函数，拟合得到Bl值<br>
-c、计算得到Mms、Cms、Rms、Qes、Qms、Qts等小信号参数</p>
-<p>2）大信号参数LSI<br>
-小振幅条件下，拟合的Bl值约等于非线性Bl曲线平衡位置的值；中大振幅条件下，会得到一个更小的Bl值，Bl值随位移变化；</p>
-<p>在小信号情况下，刚性基本上是恒定的；在大信号情况下，刚性随着位移增加而显著增大，产生了很大的恢复力，这时候悬挂材料被拉伸，波纹滚筒的外形改变很大；</p>
-<p>1.4、扬声器控制基础</p>
-<p>阻抗曲线</p>
-<p>f1和f2是阻抗最大值和直流阻抗的几何平均值对应的两个频点</p>
-<p>1.5、非线性</p>
-<p>1.6、微型扬声器</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于SmartPA]]></title>
-        <id>https://lc908.github.io/post/about smartpa/</id>
-        <link href="https://lc908.github.io/post/about smartpa/">
-        </link>
-        <updated>2021-10-11T14:25:25.000Z</updated>
-        <summary type="html"><![CDATA[<p>摘要</p>
-]]></summary>
-        <content type="html"><![CDATA[<p>摘要</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>关于SmartPA | LC908</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://lc908.github.io//favicon.ico?v=1634055137930">
+<link rel="stylesheet" href="https://lc908.github.io//styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="摘要
+
+2.1、功率放大电路
+功率放大电路：能够驱动较重负载，向外提供较大输出功率的放大电路。
+关键指标：a）最大输出功率；b）转换效率；c）失真
+不同类型的功率放大电路
+1）Class A
+A类功放：在输入信号的一个周期内，晶体管一直处于..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://lc908.github.io/">
+        <img src="https://lc908.github.io//images/avatar.png?v=1634055137930" class="site-logo">
+        <h1 class="site-title">LC908</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      温故而知新
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="https://lc908.github.io//atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">关于SmartPA</h2>
+            <div class="post-date">2021-10-11</div>
+            
+            <div class="post-content" v-pre>
+              <p>摘要</p>
 <!-- more -->
 <h1 id="21-功率放大电路">2.1、功率放大电路</h1>
 <p>功率放大电路：能够驱动较重负载，向外提供较大输出功率的放大电路。<br>
@@ -148,50 +190,46 @@ NXP TFA9874芯片内部框图&amp;参考电路</p>
 <p>Ti Tas2562芯片内部框图</p>
 <p>2.4、关键性能规格</p>
 <p>2.5、单元测试用例</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Basics]]></title>
-        <id>https://lc908.github.io/post/basics/</id>
-        <link href="https://lc908.github.io/post/basics/">
-        </link>
-        <updated>2021-10-11T14:02:38.000Z</updated>
-        <content type="html"><![CDATA[<p>[TOC]</p>
-<h1 id="1-二极管">1、二极管</h1>
-<hr>
-<h2 id="单向导电性">单向导电性</h2>
-<h2 id=""></h2>
-<h2 id="2二极管伏安特性">2）二极管伏安特性</h2>
-<p>开启电压，大多数二极管为0.7V<br>
-反向电流<br>
-反向击穿电压</p>
-<h2 id="3等效电路">3）等效电路</h2>
-<h2 id="4微变等效电路">4）微变等效电路</h2>
-<p>输出正弦波的幅值决定于与的分压</p>
-<h2 id="5稳压二级管">5）稳压二级管</h2>
-<p>稳压管在反向击穿时，在一定的电流范围内，端电压几乎不变，表现出稳压特性。</p>
-<h1 id="12-晶体管">1.2、晶体管</h1>
-<p>1）晶体管分类：<br>
-双极型晶体管 BJT (Bipolar Junction Transistor)，电流控制型；<br>
-场效应晶体管 FET (Field Effect Transistor)，电压控制型，分为结型场效应管JFET和金属氧化物半导体场效应管MOSFET；</p>
-<p>2）晶体管工作原理</p>
-<p>3）晶体管伏安特性<br>
-输入伏安曲线</p>
-<p>输出伏安曲线</p>
-<p>4）放大电路</p>
-<p>5）晶体管的四种状态<br>
-截止、放大、饱和、倒置</p>
-<p>6）共基极、共集电极放大电路</p>
-<p>7）饱和失真&amp;截止失真</p>
-<p>8）失真电压裕度</p>
-<p>9）静态负载线&amp;动态负载线</p>
-<p>10）共射极4电阻电路</p>
-<p>优点：电路的静态工作点，与晶体管关系很小</p>
-<h1 id="13-场效应管">1.3、场效应管</h1>
-<p>场效应管（Field Effect Transistor）是单极型晶体管，只有一种载流子运动，流向一个极，因此叫单极型晶体管。<br>
-Junction FET，工作电流小，适合于信号放大。<br>
-Metal-Oxide-Semiconductor FET，分为增强型和耗尽型。<br>
-分为门极G（Gate），漏极D（Drain），源极S（Source），门极无电流，漏极电流一定等于源极电流。核心原理，GS两端的电压，控制漏极电流，为压控型器件。</p>
-]]></content>
-    </entry>
-</feed>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://lc908.github.io/post/basics/">
+                  <h3 class="post-title">
+                    Basics
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
